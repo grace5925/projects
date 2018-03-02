@@ -7,10 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>历年专题汇总</title>
   <style>
-    h1{
+    h1 {
       text-align: center;
       font-size: 20px;
     }
+
     table {
       margin: 10px auto;
       border: 1px solid #999;
@@ -40,95 +41,92 @@
 <body>
 
   <script>
-
     let b = document.getElementsByTagName('body')[0],
-        arr = [
-          {
-            desc:'【移动端】近期做的一个银联的专题，答题类的',
-            link:'http://unionpayintl.v55.ink/'
-          },
-          {
-            desc:'【移动端】这是年前跟欢乐谷的最后一个专题，用于线下猜灯谜用',
-            link:'http://event.kdslife.com/201801/happyvalley'
-          },
-          {
-            desc:'【移动端】公司论坛十六周年线下活动宣传专题',
-            link:'http://event.kdslife.com/201610/kds/'
-          },
-          {
-            desc:'【移动端】答题+摇一摇互动专题',
-            link:'http://event.kdslife.com/201701/kds_man/'
-          },
-          {
-            desc:'【移动端】上海2016pspe展会专题',
-            link:'http://event.pchome.net/201609/pspe/'
-          },
-          {
-            desc:'【移动端】漫步者20周年产品展示专题',
-            link:'http://event.pchome.net/201609/edifier/'
-          },
-          {
-            desc:'【移动端】睿客产品展示专题',
-            link:'http://event.pchome.net/201609/ds_one/'
-          },
-          {
-            desc:'【移动端】公司地址迁移公告专题',
-            link:'http://event.pchome.net/201608/pchome/'
-          },
-          {
-            desc:'【移动端】联想平板新品介绍专题',
-            link:'http://event.pchome.net/201608/lenovo/'
-          },
-          {
-            desc:'【移动端】公司猴年向客户拜年专题',
-            link:'http://event.pchome.net/201601/pchome/'
-          },
-          {
-            desc:'【移动端】摄影展宣传专题',
-            link:'http://event.kdslife.com/201707/rockrund/'
-          },
-          {
-            desc:'【移动端】5J Cinco Jotas火腿介绍专题',
-            link:'http://event.kdslife.com/201712/cinco/'
-          },
-          {
-            desc:'【移动端】欢乐谷萌宠踏青季小游戏专题',
-            link:'http://event.kdslife.com/201705/'
-          },
-          {
-            desc:'【移动端】欢乐谷抖臀王小游戏专题',
-            link:'http://event.kdslife.com/201706/happyvalley/'
-          },
-          {
-            desc:'【移动端】欢乐谷捉鬼大师小游戏专题',
-            link:'http://event.kdslife.com/201709/happyvalley/'
-          },
-          {
-            desc:'【汽车相关专题PC端】第十五届国际汽车展览会专题',
-            link:'http://event.pchome.net/chezhan/'
-          },
-          {
-            desc:'【汽车相关专题PC端】试驾报名专题',
-            link:'http://event.pchome.net/201504/testdrive/'
-          },
-          {
-            desc:'【汽车相关专题手机端】kds携手Jeep举办的抽奖活动',
-            link:'http://event.pchome.net/201504/chezhan/'
-          }
-        ],
-        html = '<h1>历年专题汇总</h1><table><tr><th>序号</th><th>描述</th><th>链接</th></tr>',
-        sort,desc,link;
-    for( var i=0; i<arr.length;i++ ){
-      sort = i+1;
+      arr = [{
+          desc: '【移动端】近期做的一个银联的专题，答题类的',
+          link: 'http://unionpayintl.v55.ink/'
+        },
+        {
+          desc: '【移动端】这是年前跟欢乐谷的最后一个专题，用于线下猜灯谜用',
+          link: 'http://event.kdslife.com/201801/happyvalley'
+        },
+        {
+          desc: '【移动端】公司论坛十六周年线下活动宣传专题',
+          link: 'http://event.kdslife.com/201610/kds/'
+        },
+        {
+          desc: '【移动端】答题+摇一摇互动专题',
+          link: 'http://event.kdslife.com/201701/kds_man/'
+        },
+        {
+          desc: '【移动端】上海2016pspe展会专题',
+          link: 'http://event.pchome.net/201609/pspe/'
+        },
+        {
+          desc: '【移动端】漫步者20周年产品展示专题',
+          link: 'http://event.pchome.net/201609/edifier/'
+        },
+        {
+          desc: '【移动端】睿客产品展示专题',
+          link: 'http://event.pchome.net/201609/ds_one/'
+        },
+        {
+          desc: '【移动端】公司地址迁移公告专题',
+          link: 'http://event.pchome.net/201608/pchome/'
+        },
+        {
+          desc: '【移动端】联想平板新品介绍专题',
+          link: 'http://event.pchome.net/201608/lenovo/'
+        },
+        {
+          desc: '【移动端】公司猴年向客户拜年专题',
+          link: 'http://event.pchome.net/201601/pchome/'
+        },
+        {
+          desc: '【移动端】摄影展宣传专题',
+          link: 'http://event.kdslife.com/201707/rockrund/'
+        },
+        {
+          desc: '【移动端】5J Cinco Jotas火腿介绍专题',
+          link: 'http://event.kdslife.com/201712/cinco/'
+        },
+        {
+          desc: '【移动端】欢乐谷萌宠踏青季小游戏专题',
+          link: 'http://event.kdslife.com/201705/'
+        },
+        {
+          desc: '【移动端】欢乐谷抖臀王小游戏专题',
+          link: 'http://event.kdslife.com/201706/happyvalley/'
+        },
+        {
+          desc: '【移动端】欢乐谷捉鬼大师小游戏专题',
+          link: 'http://event.kdslife.com/201709/happyvalley/'
+        },
+        {
+          desc: '【汽车相关专题PC端】第十五届国际汽车展览会专题',
+          link: 'http://event.pchome.net/chezhan/'
+        },
+        {
+          desc: '【汽车相关专题PC端】试驾报名专题',
+          link: 'http://event.pchome.net/201504/testdrive/'
+        },
+        {
+          desc: '【汽车相关专题手机端】kds携手Jeep举办的抽奖活动',
+          link: 'http://event.pchome.net/201504/chezhan/'
+        }
+      ],
+      html = '<h1>历年专题汇总</h1><table><tr><th>序号</th><th>描述</th><th>链接</th></tr>',
+      sort, desc, link;
+    for (var i = 0; i < arr.length; i++) {
+      sort = i + 1;
       desc = arr[i].desc;
       link = arr[i].link;
-      html+='<tr><td><strong>'+ sort +'</strong></td>';
-      html+='<td style="text-align: left;">'+ desc +'</td>';
-      html+='<td><a href="'+ link +'">链接...</a></td>';
-      html+='</tr>';
+      html += '<tr><td><strong>' + sort + '</strong></td>';
+      html += '<td style="text-align: left;">' + desc + '</td>';
+      html += '<td><a href="' + link + '">链接...</a></td>';
+      html += '</tr>';
       b.innerHTML = html;
-    }
-
+    };
   </script>
 
 </body>
